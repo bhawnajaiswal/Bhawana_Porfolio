@@ -35,27 +35,6 @@ function App() {
         <Splash theme={chosenTheme} />
       ) : (
         <>
-          {/* Navbar for scrolling */}
-          <nav
-            className="navbar"
-            style={{
-              backgroundColor: chosenTheme.headerColor,
-              color: chosenTheme.text,
-            }}
-          >
-            <button onClick={() => scrollToSection("Home")}>Home</button>
-            <button onClick={() => scrollToSection("Experience")}>
-              Experience
-            </button>
-            <button onClick={() => scrollToSection("Education")}>
-              Education
-            </button>
-            <button onClick={() => scrollToSection("OpenSource")}>
-              Open Source
-            </button>
-            <button onClick={() => scrollToSection("Projects")}>Projects</button>
-            <button onClick={() => scrollToSection("Contact")}>Contact</button>
-          </nav>
 
           {/* Sections */}
           <div ref={(el) => (sectionsRef.current["Home"] = el)}>

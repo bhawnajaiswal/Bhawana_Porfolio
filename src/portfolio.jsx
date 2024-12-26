@@ -5,57 +5,51 @@ const settings = {
   const seo = {
     title: "Bhawana's Portfolio",
     description:
-      "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+      "An enthusiastic and results-driven professional passionate about designing and delivering end-to-end solutions that are innovative, scalable, and impactful. With a strong technical foundation and a commitment to excellence, I thrive on creating value through transformative products that solve real-world problems and drive measurable success.",
     og: {
-      title: "Mahendra Gandham Portfolio",
+      title: "Bhawana Jaiswal Portfolio",
       type: "website",
-      url: "https://mahendragandham.vercel.app/",
+      url: "https://bhawanajaiswal.vercel.app/",
     },
   };
   
   //Home Page
   const greeting = {
-    title: "Mahendra Gandham",
-    logo_name: "MahendraGandham",
+    title: "Bhawana Jaiswal",
+    logo_name: "BhawanaJaiswal",
     nickname: "Software Developer",
     subTitle:
-      "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+      "An enthusiastic and results-driven professional passionate about designing and delivering end-to-end solutions that are innovative, scalable, and impactful. With a strong technical foundation and a commitment to excellence, I thrive on creating value through transformative products that solve real-world problems and drive measurable success.",
     resumeLink:
       "https://drive.google.com/file/d/1VZq-1mlaXMqR_Pl5ic88qQII79qzQviB/view?usp=sharing",
-    portfolio_repository: "https://wa.link/0w5pk2",
-    githubProfile: "https://github.com/mahendrasaikumargandham",
+    portfolio_repository: "https://github.com/bhawnajaiswal/Bhawana_Porfolio",
+    githubProfile: "https://github.com/bhawnajaiswal",
   };
   
   const socialMediaLinks = [
     {
       name: "Github",
-      link: "https://github.com/mahendrasaikumargandham",
+      link: "https://github.com/bhawnajaiswal",
       fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
       backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
     },
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com/in/mahendragandham/",
+      link: "https://www.linkedin.com/in/bhawana-jaiswal-4a3335197/",
       fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
       backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
     },
-    {
-      name: "YouTube",
-      link: "https://www.youtube.com/@mahendra4919",
-      fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-      backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
-    },
+    // {
+    //   name: "YouTube",
+    //   link: "",
+    //   fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
+    //   backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
+    // },
     {
       name: "Gmail",
-      link: "mailto:mahendragandham730@gmail.com",
+      link: "mailto:bhawnajaiswal02@gmail.com",
       fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
       backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
-    },
-    {
-      name: "Instagram",
-      link: "https://www.instagram.com/mahendra_4919/",
-      fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-      backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
     },
   ];
   
