@@ -7,7 +7,7 @@ import {
   experience,
   contactPageData,
   certifications,
-} from "../../portfolio.jsx";
+} from "../../portfolio.js";
 
 function SeoHeader() {
   const sameAs = socialMediaLinks
