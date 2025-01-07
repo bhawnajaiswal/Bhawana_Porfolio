@@ -1,29 +1,42 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Educations.css";
-import DegreeCard from "../../components/degreeCard/DegreeCard.js";
+import DegreeCard from "./DegreeCard";
 import { degrees } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
 
-class Educations extends Component {
-  render() {
-    const theme = this.props.theme;
-    return (
-      <div className="main" id="educations">
-        <div className="educations-header-div">
-          <Fade bottom duration={2000} distance="20px">
-            <h1 className="educations-header" style={{ color: theme.text }}>
-              Degrees Received
-            </h1>
-          </Fade>
-        </div>
-        <div className="educations-body-div">
-          {degrees.degrees.map((degree) => {
-            return <DegreeCard degree={degree} theme={theme} />;
-          })}
-        </div>
-      </div>
-    );
-  }
+function Educations(props) {
+  const theme = props.theme;
+
+  return (
+    <motion.div
+      className="main"
+      id="educations"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <motion.div
+        className="educations-header-div"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+      >
+        <h1 className="educations-header" style={{ color: theme.text }}>
+          Degrees Received
+        </h1>
+      </motion.div>
+      <motion.div
+        className="educations-body-div"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+      >
+        {degrees.degrees.map((degree, index) => (
+          <DegreeCard key={index} degree={degree} theme={theme} />
+        ))}
+      </motion.div>
+    </motion.div>
+  );
 }
 
 export default Educations;

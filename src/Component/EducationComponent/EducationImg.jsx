@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default function EducationImg() {
+export default class EducationImg extends Component {
+  render() {
     const theme = this.props.theme;
     return (
       <svg
@@ -210,4 +211,5 @@ export default function EducationImg() {
         <ellipse cx="553.39431" cy="272" rx="29" ry="20" fill="#f5f5f5" />
       </svg>
     );
+  }
 }

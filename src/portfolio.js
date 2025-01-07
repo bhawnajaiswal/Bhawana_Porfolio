@@ -56,57 +56,6 @@ const settings = {
   const skills = {
     data: [
       {
-        title: "Game Development",
-        fileName: "CloudInfraImg",
-        skills: [
-          "⚡ Developing highly scalable production ready games in both 3D and 2D",
-          "⚡ Experience of working with Story Based Games and Third Person Shooting",
-          "⚡ Complex quantitative design for High Graphical Games",
-        ],
-        softwareSkills: [
-          {
-            skillName: "Unity",
-            fontAwesomeClassname: "simple-icons:unity",
-            style: {
-              // backgroundColor: "#fff",
-              color: "#000000",
-            },
-          },
-          {
-            skillName: "C Sharp",
-            fontAwesomeClassname: "simple-icons:csharp",
-            style: {
-              backgroundColor: "transparent",
-              color: "#270065",
-            },
-          },
-          {
-            skillName: "Unreal",
-            fontAwesomeClassname: "simple-icons:unrealengine",
-            style: {
-              backgroundColor: "transparent",
-              color: "#000000",
-            },
-          },
-          {
-            skillName: "C++",
-            fontAwesomeClassname: "simple-icons:cplusplus",
-            style: {
-              backgroundColor: "transparent",
-              color: "#0080cd",
-            },
-          },
-          {
-            skillName: "Blender",
-            fontAwesomeClassname: "simple-icons:blender",
-            style: {
-              backgroundColor: "transparent",
-              color: "#eb7700",
-            },
-          },
-        ],
-      },
-      {
         title: "Full Stack Development",
         fileName: "FullStackImg",
         skills: [
@@ -267,7 +216,7 @@ const settings = {
       {
         title: "JSS Academy of Technical Education",
         subtitle: "B.Tech",
-        logo_path: "src\assets\images\JSSATE_Noida.png",
+        logo_path: "JSSATE_Noida.png",  // Correct path format
         alt_name: "JSS Academy of Technical Education, Noida",
         duration: "2021 - 2024",
         descriptions: [
@@ -279,12 +228,13 @@ const settings = {
     ],
   };
   
+  
   const certifications = {
     certifications: [
       {
         title: "PThe Complete 2022 Web Development Bootcamp - Udemy",
         subtitle: "Udemy",
-        logo_path: "src/assets/images/udemy_logo.jpg",
+        logo_path: "udemy_logo.jpg",
         certificate_link:
           "https://www.udemy.com/certificate/UC-96193c5b-0426-40b5-8577-2c4665b7c397/",
         alt_name: "Udemy",
@@ -293,7 +243,7 @@ const settings = {
       {
         title: "Programming for Everybody (Getting Started with Python)",
         subtitle: "Coursera",
-        logo_path: "src\assets\images\coursera_logo.png",
+        logo_path: "coursera_logo.png",
         certificate_link:
           "https://www.coursera.org/account/accomplishments/verify/YKMWRL83HC3L?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course",
         alt_name: "Coursera",
@@ -302,7 +252,7 @@ const settings = {
       {
         title: "Create Your First Chatbot with Rasa and Python",
         subtitle: "Coursera",
-        logo_path: "src\assets\images\coursera_logo.png",
+        logo_path: "coursera_logo.png",
         certificate_link:
           "https://www.coursera.org/account/accomplishments/verify/2H26N6T835JX?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
         alt_name: "Coursera",
@@ -314,9 +264,9 @@ const settings = {
   // Experience Page
   const experience = {
     title: "Experience",
-    subtitle: "Work, Internship and Volunteership",
+    subtitle: "Work Experience",
     description:
-      "I have collaborated with several emerging studios and indie developers as a game developer, contributing across Unity, Unreal, Blender, C#, and C++. Additionally, I have partnered with established companies, focusing primarily on game mechanics, AI integration, and software architecture. I am passionate about organizing events, which has led to my active involvement with various open-source communities as a representative.",
+      "I have Hands-on experience in developing and maintaining Perl-based web applications for system monitoring, performance optimization, and alert management. Proficient in deploying and configuring web applications on Linux servers, executing SQL queries for data analysis and reporting, and managing databases with a focus on query optimization. Adept in backend web development using Node.js, Express.js, and MongoDB, as well as front-end technologies like HTML, CSS, JavaScript, and React. Skilled in streamlining IT operations with automation scripts and resolving production issues, collaborating with cross-functional teams to deliver effective solutions.",
     header_image_path: "experience.svg",
     sections: [
       {
@@ -324,14 +274,14 @@ const settings = {
         work: true,
         experiences: [
           {
-            title: "Associate Software Engineer",
-            company: "Accenture India Pvt. Ltd.",
-            company_url: "https://www.accenture.com/in-en",
-            logo_path: "tiktok_logo.png",
-            duration: "August 2024 - Present",
-            location: "Nagpur, India",
+            title: "Senior Executive",
+            company: "Vodafone Intelligent Solutions",
+            company_url: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
+            logo_path: "vodafone.png",
+            duration: "August 2022 - Present",
+            location: "Pune, India",
             description:
-              "Collaborated in agile teams to deliver innovative software solutions, optimized processes through automation, and contributed to full-stack development, ensuring seamless client delivery and enhanced business performance.",
+              "I developed and maintained web applications, optimized server performance, managed databases, and automated IT operations to ensure smooth and efficient system performance.",
             color: "#000000",
           },
         ],
