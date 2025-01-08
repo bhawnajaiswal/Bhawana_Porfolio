@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import ApolloClient from "apollo-boost";
-import { gql } from "apollo-boost";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client"; // Importing from @apollo/client
+import { motion } from "framer-motion";
 import "./Project.css";
-import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import Button from "../../components/button/Button";
+import GithubRepoCard from "../../Component/githubRepoCard/GithubRepoCard.js";
+import Button from "../../Component/Button/Button.jsx";
 import { openSource } from "../../portfolio";
 import { greeting } from "../../portfolio.js";
 
@@ -17,12 +17,9 @@ export default function Projects() {
   function getRepoData() {
     const client = new ApolloClient({
       uri: "https://api.github.com/graphql",
-      request: (operation) => {
-        operation.setContext({
-          headers: {
-            authorization: `Bearer ${atob(openSource.githubConvertedToken)}`,
-          },
-        });
+      cache: new InMemoryCache(), // Required for Apollo Client caching
+      headers: {
+        authorization: `Bearer ${atob(openSource.githubConvertedToken)}`,
       },
     });
 
@@ -68,12 +65,30 @@ export default function Projects() {
 
   return (
     <div className="main" id="opensource">
-      <h1 className="project-title">Open Source Projects</h1>
+      <motion.h1
+        className="project-title"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+      >
+        Open Source Projects
+      </motion.h1>
+
       <div className="repo-cards-div-main">
-        {repo.map((v, i) => {
-          return <GithubRepoCard repo={v} key={v.node.id} />;
+        {repo.map((v) => {
+          return (
+            <motion.div
+              key={v.node.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <GithubRepoCard repo={v} />
+            </motion.div>
+          );
         })}
       </div>
+
       <Button
         text={"More Projects"}
         className="project-button"

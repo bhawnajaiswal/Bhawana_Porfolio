@@ -1,28 +1,29 @@
-import React, { Component } from "react";
-import PullRequestChart from "../../components/pullRequestChart/PullRequestChart.js";
-import IssueChart from "../../components/issueChart/IssueChart.js";
-import { Fade } from "react-reveal";
+import React from "react";
+import PullRequestChart from "../../Component/pullRequestChart/PullRequestChart.js";
+import IssueChart from "../../Component/issueChart/IssueChart.js";
+import { motion } from "framer-motion";
 import "./OpensourceCharts.css";
 
-class OpensourceCharts extends Component {
-  render() {
-    const theme = this.props.theme;
-    return (
-      <div className="main-div">
-        <div className="os-charts-header-div">
-          <Fade bottom duration={2000} distance="20px">
-            <h1 className="os-charts-header" style={{ color: theme.text }}>
-              Contributions
-            </h1>
-          </Fade>
-        </div>
-        <div className="os-charts-body-div">
-          <PullRequestChart />
-          <IssueChart />
-        </div>
+const OpensourceCharts = ({ theme }) => {
+  return (
+    <div className="main-div">
+      <div className="os-charts-header-div">
+        <motion.h1
+          className="os-charts-header"
+          style={{ color: theme.text }}
+          initial={{ y: 20, opacity: 0 }} // Animation from bottom
+          animate={{ y: 0, opacity: 1 }} // Animate to visible
+          transition={{ duration: 2, ease: "easeInOut" }}
+        >
+          Contributions
+        </motion.h1>
       </div>
-    );
-  }
-}
+      <div className="os-charts-body-div">
+        <PullRequestChart />
+        <IssueChart />
+      </div>
+    </div>
+  );
+};
 
 export default OpensourceCharts;

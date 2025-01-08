@@ -1,15 +1,20 @@
 .issues-header {
   font-size: 40px;
-  line-height: 1.1;
-  font-family: "Google Sans Regular";
+  line-height: 1.2; /* Slightly adjusted for better spacing */
+  font-family: "Google Sans Regular", sans-serif; /* Add fallback font */
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 20px auto; /* Center align and add vertical spacing */
+  padding: 0 10px; /* Ensure consistent padding on smaller screens */
 }
 
 .issues-body-div {
   text-align: center;
   width: 100%;
+  display: flex; /* Flexbox for alignment */
+  flex-wrap: wrap; /* Allow wrapping of issue cards on smaller screens */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the cards horizontally */
+  padding: 20px; /* Add spacing around the cards */
 }
 
 @media (max-width: 1380px) {
@@ -21,5 +26,10 @@
 @media (max-width: 768px) {
   .issues-header {
     font-size: 25px;
+    margin: 10px auto; /* Adjust spacing for smaller devices */
+  }
+
+  .issues-body-div {
+    padding: 10px; /* Reduce padding on smaller devices */
   }
 }
