@@ -1,29 +1,30 @@
-import React, { Component } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import "./PullRequests.css";
-import { Fade } from "react-reveal";
-import PullRequestCard from "../../components/pullRequestCard/PullRequestCard";
+import PullRequestCard from "../../Component/pullRequestCard/PullRequestCard";
 import pullRequestsData from "../../shared/opensource/pull_requests.json";
 
-class PullRequests extends Component {
-  render() {
-    const theme = this.props.theme;
-    return (
-      <div>
-        <div className="pull-requests-header-div">
-          <Fade bottom duration={2000} distance="20px">
-            <h1 className="pull-requests-header" style={{ color: theme.text }}>
-              Pull Requests
-            </h1>
-          </Fade>
-        </div>
-        <div className="pull-request-body-div">
-          {pullRequestsData["data"].map((pullRequest) => {
-            return <PullRequestCard pullRequest={pullRequest} />;
-          })}
-        </div>
+function PullRequests({ theme }) {
+  return (
+    <div>
+      <div className="pull-requests-header-div">
+        <motion.h1
+          className="pull-requests-header"
+          style={{ color: theme.text }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          Pull Requests
+        </motion.h1>
       </div>
-    );
-  }
+      <div className="pull-request-body-div">
+        {pullRequestsData["data"].map((pullRequest) => (
+          <PullRequestCard key={pullRequest.id} pullRequest={pullRequest} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default PullRequests;

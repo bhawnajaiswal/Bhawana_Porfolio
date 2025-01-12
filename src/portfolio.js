@@ -302,32 +302,32 @@ const settings = {
   const contactPageData = {
     contactSection: {
       title: "Contact Me",
-      profile_image_path: "animated_ashutosh.png",
+      // profile_image_path: "",
       description:
         "I’d love to hear from you! Whether you have questions, collaboration ideas, or just want to connect, feel free to reach out. Let’s create something amazing together! Drop me a message below, and I’ll get back to you as soon as possible.",
     },
-    blogSection: {
-      title: "Blogs",
-      subtitle:
-        "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
-      link: "https://blogs.ashutoshhathidara.com/",
-      avatar_image_path: "blogs_image.svg",
-    },
-    addressSection: {
-      title: "Address",
-      subtitle: "Narsapur, West Godavari Dist, Andhra Pradesh - 534275",
-      locality: "Ramalayam Street",
-      country: "India",
-      region: "Andhra Pradesh",
-      postalCode: "534275",
-      streetAddress: "Saratoga Avenue",
-      avatar_image_path: "address_image.svg",
-      location_map_link: "https://maps.app.goo.gl/4nq83jX3XA2P6nyZ6",
-    },
-    phoneSection: {
-      title: "Phone Number",
-      subtitle: "+91 6305152568",
-    },
+    // blogSection: {
+    //   title: "Blogs",
+    //   subtitle:
+    //     "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
+    //   link: "",
+    //   avatar_image_path: "",
+    // },
+    // addressSection: {
+    //   title: "Address",
+    //   subtitle: "",
+    //   locality: "",
+    //   country: "",
+    //   region: "",
+    //   postalCode: "",
+    //   streetAddress: "",
+    //   avatar_image_path: "",
+    //   location_map_link: "",
+    // },
+    // phoneSection: {
+    //   title: "Phone Number",
+    //   subtitle: "",
+    // },
   };
   
   export {

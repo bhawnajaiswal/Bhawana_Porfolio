@@ -1,5 +1,6 @@
 #topButton {
   visibility: hidden;
+  opacity: 0;
   position: fixed;
   bottom: 1.2rem;
   right: 1.5rem;
@@ -8,4 +9,10 @@
   outline: none;
   border-radius: 2rem;
   font-size: 1.5rem;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#topButton.show {
+  visibility: visible;
+  opacity: 1;
 }

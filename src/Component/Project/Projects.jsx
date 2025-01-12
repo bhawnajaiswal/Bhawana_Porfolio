@@ -1,22 +1,24 @@
 import React from "react";
-import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import Button from "../../components/button/Button";
-import TopButton from "../../components/topButton/TopButton";
+import GithubRepoCard from "../githubRepoCard/GithubRepoCard.js";
+import Button from "../Button/Button.jsx";
+import TopButton from "../topButton/TopButton.js";
 import { greeting, projectsHeader } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import { motion } from "framer-motion"; // Import framer-motion
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 2 },
+};
+
 const Projects = ({ theme, onToggle }) => {
   return (
-    <div className="projects-main">
-      <div className="basic-projects">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }} // Initial state: invisible and slightly moved down
-          animate={{ opacity: 1, y: 0 }}   // Final state: fully visible and moved to position
-          transition={{ duration: 2 }}     // Duration of the transition
-        >
+    <section className="projects-main">
+      <motion.div variants={fadeInUp} initial="initial" animate="animate">
+        <div className="basic-projects">
           <div className="projects-heading-div">
             <div className="projects-heading-img-div">
               <ProjectsImg theme={theme} />
@@ -30,13 +32,19 @@ const Projects = ({ theme, onToggle }) => {
               </p>
             </div>
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
+
       <div className="repo-cards-div-main">
-        {ProjectsData.data.map((repo) => (
-          <GithubRepoCard key={repo.id} repo={repo} theme={theme} />
-        ))}
+        {ProjectsData.data.length === 0 ? (
+          <p>No projects available at the moment.</p>
+        ) : (
+          ProjectsData.data.map((repo) => (
+            <GithubRepoCard key={repo.id} repo={repo} theme={theme} />
+          ))
+        )}
       </div>
+
       <Button
         text={"More Projects"}
         className="project-button"
@@ -45,7 +53,7 @@ const Projects = ({ theme, onToggle }) => {
         theme={theme}
       />
       <TopButton theme={theme} />
-    </div>
+    </section>
   );
 };
 

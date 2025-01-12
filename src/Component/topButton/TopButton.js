@@ -1,55 +1,58 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./TopButton.css";
 
 export default function TopButton({ theme }) {
-  function GoUpEvent() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const GoUpEvent = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-  }
-
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 30 ||
-      document.documentElement.scrollTop > 30
-    ) {
-      document.getElementById("topButton").style.visibility = "visible";
-    } else {
-      document.getElementById("topButton").style.visibility = "hidden";
-    }
-  }
-
-  window.onscroll = function () {
-    scrollFunction();
   };
 
-  const onMouseEnter = (color, bgColor) => {
-    /* For the button */
-    const topButton = document.getElementById("topButton");
-    topButton.style.color = color;
-    topButton.style.backgroundColor = bgColor;
+  const scrollFunction = () => {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      if (!isVisible) setIsVisible(true); // Show button
+    } else {
+      if (isVisible) setIsVisible(false); // Hide button
+    }
+  };
 
-    /* For arrow icon */
+  useEffect(() => {
+    window.onscroll = scrollFunction;
+
+    // Cleanup on unmount
+    return () => {
+      window.onscroll = null;
+    };
+  }, [isVisible]);
+
+  const onMouseEnter = (color, bgColor) => {
+    const topButton = document.getElementById("topButton");
     const arrow = document.getElementById("arrow");
-    arrow.style.color = color;
-    arrow.style.backgroundColor = bgColor;
+    if (topButton && arrow) {
+      topButton.style.color = color;
+      topButton.style.backgroundColor = bgColor;
+      arrow.style.color = color;
+      arrow.style.backgroundColor = bgColor;
+    }
   };
 
   const onMouseLeave = (color, bgColor) => {
-    /* For the button */
     const topButton = document.getElementById("topButton");
-    topButton.style.color = color;
-    topButton.style.backgroundColor = bgColor;
-
-    /* For arrow icon */
     const arrow = document.getElementById("arrow");
-    arrow.style.color = color;
-    arrow.style.backgroundColor = bgColor;
+    if (topButton && arrow) {
+      topButton.style.color = color;
+      topButton.style.backgroundColor = bgColor;
+      arrow.style.color = color;
+      arrow.style.backgroundColor = bgColor;
+    }
   };
 
   return (
     <div
       onClick={GoUpEvent}
       id="topButton"
+      className={isVisible ? "show" : ""}
       style={{
         color: theme.body,
         backgroundColor: theme.text,

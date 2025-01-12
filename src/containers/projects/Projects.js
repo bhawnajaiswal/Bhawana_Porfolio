@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { ApolloClient, InMemoryCache, gql } from "@apollo/client"; // Importing from @apollo/client
+// import { ApolloClient, InMemoryCache, gql } from "@apollo/client"; // Importing from @apollo/client
 import { motion } from "framer-motion";
 import "./Project.css";
 import GithubRepoCard from "../../Component/githubRepoCard/GithubRepoCard.js";
 import Button from "../../Component/Button/Button.jsx";
-import { openSource } from "../../portfolio";
+// import { openSource } from "../../portfolio";
 import { greeting } from "../../portfolio.js";
 
 export default function Projects() {
