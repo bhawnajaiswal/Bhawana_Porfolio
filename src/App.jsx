@@ -1,5 +1,5 @@
-// App.jsx
 import React, { useState, useEffect, useRef } from "react";
+import Navbar from "./Component/Navbar/Navbar";  // Import Navbar
 import Home from "./Component/Home/Home";
 import Splash from "./Component/Splash/Splash";
 import EducationComponent from "./Component/EducationComponent/EducationComponent";
@@ -22,14 +22,6 @@ function App() {
     }
   }, []);
 
-  // Scroll to a specific section
-  const scrollToSection = (sectionName) => {
-    const section = sectionsRef.current[sectionName];
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div
       className="app"
@@ -39,23 +31,26 @@ function App() {
         <Splash theme={chosenTheme} />
       ) : (
         <>
-          {/* Pass the scrollToSection prop to the components */}
-          <div ref={(el) => (sectionsRef.current["Home"] = el)}>
-            <Home theme={chosenTheme} scrollToSection={scrollToSection} />
+          {/* Navbar Component */}
+          <Navbar />
+
+          {/* Sections with matching refs */}
+          <div ref={(el) => (sectionsRef.current["Home"] = el)} id="home">
+            <Home theme={chosenTheme} />
           </div>
-          <div ref={(el) => (sectionsRef.current["EducationComponent"] = el)}>
-            <EducationComponent theme={chosenTheme} scrollToSection={scrollToSection} />
+          <div ref={(el) => (sectionsRef.current["EducationComponent"] = el)} id="education">
+            <EducationComponent theme={chosenTheme} />
           </div>
-          <div ref={(el) => (sectionsRef.current["Experience"] = el)}>
-            <Experience theme={chosenTheme} scrollToSection={scrollToSection} />
+          <div ref={(el) => (sectionsRef.current["Experience"] = el)} id="experience">
+            <Experience theme={chosenTheme} />
           </div>
-          <div ref={(el) => (sectionsRef.current["Projects"] = el)}>
-            <Projects theme={chosenTheme} scrollToSection={scrollToSection} />
+          <div ref={(el) => (sectionsRef.current["Projects"] = el)} id="projects">
+            <Projects theme={chosenTheme} />
           </div>
-          <div ref={(el) => (sectionsRef.current["Contact"] = el)}>
-            <Contact theme={chosenTheme} scrollToSection={scrollToSection} />
+          <div ref={(el) => (sectionsRef.current["Contact"] = el)} id="contact">
+            <Contact theme={chosenTheme} />
           </div>
-          <div ref={(el) => (sectionsRef.current["Footer"] = el)}>
+          <div ref={(el) => (sectionsRef.current["Footer"] = el)} id="footer">
             <Footer theme={chosenTheme} />
           </div>
         </>

@@ -4,17 +4,7 @@ import { motion } from "framer-motion"; // Import motion from framer-motion
 import { greeting } from "../../portfolio";
 import SeoHeader from "../SeoHeader/SeoHeader";
 
-const Header = ({ theme, scrollToSection }) => {
-  const onMouseEnter = (event, color) => {
-    const el = event.target;
-    el.style.backgroundColor = color;
-  };
-
-  const onMouseOut = (event) => {
-    const el = event.target;
-    el.style.backgroundColor = "transparent";
-  };
-
+const Header = ({ theme }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -25,7 +15,7 @@ const Header = ({ theme, scrollToSection }) => {
       <div>
         <header className="header">
           <div className="logo">
-            <span style={{ color: theme.text }}> &lt;</span>
+            <span style={{ color: theme.text }}>&lt;</span>
             <span className="logo-name" style={{ color: theme.text }}>
               {greeting.logo_name}
             </span>
@@ -37,70 +27,58 @@ const Header = ({ theme, scrollToSection }) => {
           </label>
           <ul className="menu" style={{ backgroundColor: theme.body }}>
             <li>
-              <button
+              <a
+                href="#home"
                 className="menu-link"
                 style={{ color: theme.text }}
-                onClick={() => scrollToSection("Home")}
-                onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                onMouseOut={(event) => onMouseOut(event)}
               >
                 Home
-              </button>
+              </a>
             </li>
             <li>
-              <button
+              <a
+                href="#education"
                 className="menu-link"
                 style={{ color: theme.text }}
-                onClick={() => scrollToSection("Education")}
-                onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                onMouseOut={(event) => onMouseOut(event)}
               >
                 Education
-              </button>
+              </a>
             </li>
             <li>
-              <button
+              <a
+                href="#experience"
                 className="menu-link"
                 style={{ color: theme.text }}
-                onClick={() => scrollToSection("Experience")}
-                onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                onMouseOut={(event) => onMouseOut(event)}
               >
                 Experience
-              </button>
+              </a>
             </li>
             <li>
-              <button
+              <a
+                href="#projects"
                 className="menu-link"
                 style={{ color: theme.text }}
-                onClick={() => scrollToSection("Projects")}
-                onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                onMouseOut={(event) => onMouseOut(event)}
               >
                 Projects
-              </button>
+              </a>
             </li>
             <li>
-              <button
+              <a
+                href="#opensource"
                 className="menu-link"
                 style={{ color: theme.text }}
-                onClick={() => scrollToSection("OpenSource")}
-                onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                onMouseOut={(event) => onMouseOut(event)}
               >
                 Open Source
-              </button>
+              </a>
             </li>
             <li>
-              <button
+              <a
+                href="#contact"
                 className="menu-link"
                 style={{ color: theme.text }}
-                onClick={() => scrollToSection("Contact")}
-                onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                onMouseOut={(event) => onMouseOut(event)}
               >
                 Contact Me
-              </button>
+              </a>
             </li>
           </ul>
         </header>

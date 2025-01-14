@@ -12,7 +12,7 @@ function Educations(props) {
       className="main"
       id="educations"
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }} // Added to trigger animation when in view
       transition={{ duration: 1 }}
     >
       <motion.div

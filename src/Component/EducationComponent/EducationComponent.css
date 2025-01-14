@@ -9,6 +9,8 @@
 
 .heading-div {
   display: flex;
+  align-items: center; /* Ensure proper alignment */
+  justify-content: center; /* Center content horizontally */
 }
 
 .heading-div > * {
@@ -36,13 +38,14 @@
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .heading-sub-text {
   font-size: 30px;
   font-family: "Google Sans Regular";
   text-align: center;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1380px) {

@@ -1,8 +1,17 @@
 .educations-header {
   font-size: 40px;
-  line-height: 1.1;
+  line-height: 1.2;
   font-family: "Google Sans Regular";
   text-align: center;
+  margin-bottom: 20px; /* Added spacing below the header */
+}
+
+.educations-body-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures cards wrap properly on smaller screens */
+  gap: 20px; /* Adds consistent spacing between cards */
+  margin-top: 30px;
 }
 
 @media (max-width: 1380px) {
@@ -14,5 +23,10 @@
 @media (max-width: 768px) {
   .educations-header {
     font-size: 30px;
+  }
+
+  .educations-body-div {
+    flex-direction: column; /* Stacks the cards vertically on smaller screens */
+    gap: 15px; /* Reduces gap between cards for smaller screens */
   }
 }

@@ -26,7 +26,8 @@ const Certifications = ({ theme }) => {
       id="certs"
       variants={containerVariant}
       initial="hidden"
-      animate="visible"
+      whileInView="visible" // Trigger animation when element comes into view
+      viewport={{ once: true }} // Ensures animation triggers only once
     >
       <motion.div className="certs-header-div">
         <motion.h1

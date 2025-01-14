@@ -31,6 +31,7 @@ export default function SkillSection(props) {
             </motion.div> */}
 
             <div className="skills-text-div">
+            What I Do?
               <motion.h1
                 className="skills-heading"
                 style={{ color: theme.text }}
@@ -38,6 +39,7 @@ export default function SkillSection(props) {
                 initial={{ opacity: 0, y: 20 }}
                 transition={{ duration: 1.5 }}
               >
+                
                 {skill.title}
               </motion.h1>
               <motion.div

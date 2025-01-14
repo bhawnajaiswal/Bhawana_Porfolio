@@ -221,7 +221,7 @@ const settings = {
         duration: "2021 - 2024",
         descriptions: [
           "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS etc.",
-          "⚡ Apart from this, I have done courses on Linux Administration, Full Stack Development.",
+          "⚡ Apart from this, I have done courses on Python and Full Stack Development.",
         ],
         website_link: "https://jssaten.ac.in/",
       },
@@ -232,7 +232,7 @@ const settings = {
   const certifications = {
     certifications: [
       {
-        title: "PThe Complete 2022 Web Development Bootcamp - Udemy",
+        title: "The Complete 2022 Web Development Bootcamp - Udemy",
         subtitle: "Udemy",
         logo_path: "udemy_logo.jpg",
         certificate_link:
@@ -273,6 +273,17 @@ const settings = {
         title: "Work",
         work: true,
         experiences: [
+          {
+            title: "Graduate Engineer Trainee",
+            company: "Vodafone Intelligent Solutions",
+            company_url: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
+            logo_path: "vodafone.png",
+            duration: "August 2022 - Present",
+            location: "Pune, India",
+            description:
+              "Supported database management by developing SQL queries for data analysis and reporting. Administered Linux servers and created automation scripts to streamline IT operations and improve efficiency.",
+            color: "#000000",
+          },
           {
             title: "Senior Executive",
             company: "Vodafone Intelligent Solutions",
