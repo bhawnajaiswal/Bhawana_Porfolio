@@ -31,9 +31,9 @@ export default function Greeting(props) {
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
                 <Button
-                  text="Ping me on WhatsApp"
+                  text="Connect with me"
                   newTab={true}
-                  href={greeting.portfolio_repository}
+                  href={greeting.linkdinLink}
                   theme={theme}
                   className="portfolio-repo-btn"
                 />

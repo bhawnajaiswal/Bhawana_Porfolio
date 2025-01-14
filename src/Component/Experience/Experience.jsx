@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
-import ExperienceImg from "./ExperienceImg";
+// import ExperienceImg from "./ExperienceImg";
 
 function Experience({ theme }) {
   return (
@@ -15,9 +15,9 @@ function Experience({ theme }) {
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 1 }}
         >
-          <div className="experience-heading-img-div">
+          {/* <div className="experience-heading-img-div">
             <ExperienceImg theme={theme} />
-          </div>
+          </div> */}
           <div className="experience-heading-text-div">
             <h1 className="experience-heading-text" style={{ color: theme.text }}>
               {experience.title}

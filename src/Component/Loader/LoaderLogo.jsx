@@ -21,6 +21,8 @@ function LoaderLogo() {
               width={399}
               x={60.8}
               y={5.75}
+              rx={12}
+              ry={12}
             />
             <text
               className="script-font"

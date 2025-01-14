@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom/client"; // Updated import for React 18
-import 'bootstrap/dist/css/bootstrap.min.css'; // Only once
+import ReactDOM from "react-dom/client"; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { BaseProvider, LightTheme } from "baseui";
 import { Provider as StyletronProvider } from "styletron-react";
 import { Client as Styletron } from "styletron-engine-atomic";
@@ -12,8 +12,8 @@ import "./assets/font-awesome/css/all.css";
 
 const engine = new Styletron();
 
-// React 18 way to render
-const root = ReactDOM.createRoot(document.getElementById("root")); // Create a root
+
+const root = ReactDOM.createRoot(document.getElementById("root")); 
 root.render(
   <React.StrictMode>
     <StyletronProvider value={engine}>

@@ -21,9 +21,10 @@ const settings = {
     subTitle:
       "An enthusiastic and results-driven professional passionate about designing and delivering end-to-end solutions that are innovative, scalable, and impactful. With a strong technical foundation and a commitment to excellence, I thrive on creating value through transformative products that solve real-world problems and drive measurable success.",
     resumeLink:
-      "https://drive.google.com/file/d/1VZq-1mlaXMqR_Pl5ic88qQII79qzQviB/view?usp=sharing",
+      "https://drive.google.com/file/d/15xTNXM_RDTjUs4mStfwCWKENDasuB-Dg/view?usp=sharing",
     portfolio_repository: "https://github.com/bhawnajaiswal/Bhawana_Porfolio",
     githubProfile: "https://github.com/bhawnajaiswal",
+    linkdinLink: "https://www.linkedin.com/in/bhawana-jaiswal-4a3335197/",
   };
   
   const socialMediaLinks = [
@@ -243,16 +244,25 @@ const settings = {
       {
         title: "Programming for Everybody (Getting Started with Python)",
         subtitle: "Coursera",
-        logo_path: "coursera_logo.png",
+        logo_path: "coursera.png",
         certificate_link:
           "https://www.coursera.org/account/accomplishments/verify/YKMWRL83HC3L?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course",
         alt_name: "Coursera",
         color_code: "#fff",
       },
       {
+        title: "Python and Data Structure",
+        subtitle: "IEEE",
+        logo_path: "IEEE.png",
+        certificate_link:
+          "https://drive.google.com/file/d/0B024kmbncpOJc09haGZiVzdpQUtodzktVTUxeWdXWC1TTnZV/view?usp=sharing&resourcekey=0-ixUpRgYU0j3rwVFJG97Ntw",
+        alt_name: "IEEE",
+        color_code: "#fff",
+      },
+      {
         title: "Create Your First Chatbot with Rasa and Python",
         subtitle: "Coursera",
-        logo_path: "coursera_logo.png",
+        logo_path: "coursera.png",
         certificate_link:
           "https://www.coursera.org/account/accomplishments/verify/2H26N6T835JX?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
         alt_name: "Coursera",
@@ -278,7 +288,7 @@ const settings = {
             company: "Vodafone Intelligent Solutions",
             company_url: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
             logo_path: "vodafone.png",
-            duration: "August 2022 - Present",
+            duration: "August 2022 - September 2023",
             location: "Pune, India",
             description:
               "Supported database management by developing SQL queries for data analysis and reporting. Administered Linux servers and created automation scripts to streamline IT operations and improve efficiency.",
@@ -289,7 +299,7 @@ const settings = {
             company: "Vodafone Intelligent Solutions",
             company_url: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
             logo_path: "vodafone.png",
-            duration: "August 2022 - Present",
+            duration: "September 2023 - Present",
             location: "Pune, India",
             description:
               "I developed and maintained web applications, optimized server performance, managed databases, and automated IT operations to ensure smooth and efficient system performance.",
@@ -304,7 +314,7 @@ const settings = {
   const projectsHeader = {
     title: "Projects",
     description:
-      "My projects leverage a diverse array of cutting-edge technologies, with a primary focus on game development. I excel at creating immersive gaming experiences using Unity, Unreal Engine, and Blender, while implementing robust gameplay mechanics through C# and C++. Additionally, I deploy these projects on cloud infrastructure, ensuring seamless access and scalability for players worldwide.",
+    "My projects showcase a diverse range of web development technologies, with a strong emphasis on creating dynamic, interactive websites. I specialize in building responsive and user-friendly applications using HTML, CSS, JavaScript, and React, ensuring smooth functionality and engaging user experiences. By leveraging modern web frameworks, I deliver scalable solutions that are accessible across various devices and platforms.",
     avatar_image_path: "projects_image.svg",
   };
   

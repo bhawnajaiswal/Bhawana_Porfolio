@@ -1,27 +1,74 @@
+/* General styles for the skill section */
+.software-skills-main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .dev-icons {
   padding-left: 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
   text-align: center;
 }
 
+/* Styling for individual skill icons */
 .software-skill-inline {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
   font-family: "Google Sans Regular";
+  position: relative; /* Necessary for tooltip positioning */
+  width: 48px; /* Fixed size for consistent layout */
+  height: 48px; /* Fixed size for consistent layout */
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.software-skill-inline > i {
-  color: #868e96;
+.software-skill-inline:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
 }
 
-.software-skill-inline > i:hover {
-  color: #645beb;
+/* Tooltip styles */
+.software-skill-inline::after {
+  content: attr(data-skill-name); /* Display skill name from data attribute */
+  position: absolute;
+  bottom: -35px; /* Position below the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8); /* Black background */
+  color: white; /* White text */
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
+  white-space: nowrap; /* Prevent text from wrapping */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
+.software-skill-inline:hover::after {
+  opacity: 1; /* Show tooltip on hover */
+  visibility: visible;
+}
+
+/* Styling for images used in place of icons */
 .skill-image {
   height: 48px;
+  width: 48px; /* Ensure consistent size */
+  object-fit: contain; /* Prevent images from distorting */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.skill-image:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Fallback icon when no font-awesome or image is provided */
+.default-icon {
+  font-size: 2rem;
+  color: #868e96;
 }

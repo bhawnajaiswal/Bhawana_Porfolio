@@ -44,9 +44,9 @@ export default function Greeting(props) {
             <div className="portfolio-repo-btn-div">
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <Button
-                  text="Ping me on WhatsApp"
+                  text="Connect with me"
                   newTab={true}
-                  href={greeting.portfolio_repository}
+                  href={greeting.linkdinLink}
                   theme={theme}
                   className="portfolio-repo-btn"
                 />

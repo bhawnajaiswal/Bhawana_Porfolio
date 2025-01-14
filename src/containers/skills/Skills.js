@@ -18,6 +18,18 @@ export default function SkillSection(props) {
 
   return (
     <div>
+      {/* Adding "What I Do?" heading */}
+      <motion.h1
+        className="skills-header"
+        style={{ color: theme.text }}
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 20 }}
+        transition={{ duration: 1.5 }}
+      >
+        What I Do?
+      </motion.h1>
+
+      {/* Mapping through the skills data */}
       {skills.data.map((skill, i) => {
         return (
           <div key={i} className="skills-main-div">
@@ -29,9 +41,8 @@ export default function SkillSection(props) {
             >
               <GetSkillSvg fileName={skill.fileName} theme={theme} />
             </motion.div> */}
-
+            
             <div className="skills-text-div">
-            What I Do?
               <motion.h1
                 className="skills-heading"
                 style={{ color: theme.text }}
@@ -39,7 +50,6 @@ export default function SkillSection(props) {
                 initial={{ opacity: 0, y: 20 }}
                 transition={{ duration: 1.5 }}
               >
-                
                 {skill.title}
               </motion.h1>
               <motion.div

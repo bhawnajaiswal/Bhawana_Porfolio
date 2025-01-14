@@ -41,10 +41,11 @@
     font-size: 30px;
     line-height: 0px;
     font-family: "Google Sans Bold Italic";
+    padding: 10px;
   }
   
   .greeting-text-p {
-    font-size: 40px;
+    font-size: 25px;
     line-height: 40px;
     margin-right: 40px;
     font-family: "Google Sans Medium";

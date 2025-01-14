@@ -21,15 +21,17 @@ text-align: center;
 justify-content: center;
 background: #0c002b;
 background-size: 100vh;
+
 }
 
 .wrapper
 {
 position: absolute;
-top: 25%;
-left: 50%;
+top: 15%;
+left: 55%;
 transform: translate(-80%, 150%);
 width: 30%;
+
 }
 /* #Path_31, #Path_32
 {
