@@ -62,7 +62,7 @@ const Header = ({ theme }) => {
                 Projects
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#opensource"
                 className="menu-link"
@@ -70,7 +70,7 @@ const Header = ({ theme }) => {
               >
                 Open Source
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="#contact"

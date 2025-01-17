@@ -88,7 +88,8 @@
 }
 
 .experience-card {
-  min-width: 350px;
+  min-width: 80vw;
+  max-width: 80vw;
   /* height: 170px; */
   margin-bottom: 20px;
   border-radius:10px;

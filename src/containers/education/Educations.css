@@ -4,6 +4,7 @@
   font-family: "Google Sans Regular";
   text-align: center;
   margin-bottom: 20px; /* Added spacing below the header */
+  margin-top: -5rem;
 }
 
 .educations-body-div {

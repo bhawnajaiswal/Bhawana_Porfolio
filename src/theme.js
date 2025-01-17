@@ -194,6 +194,38 @@ export const blueTheme = {
     headerColor: "#E1E2E1",
     splashBg: "#05505E",
   };
+
+  export const lightTheme = {
+    body: `hsl(190, 60%, 99%)`, // Light background
+    text: `hsl(190, 8%, 25%)`, // Darker text for contrast
+    expTxtColor: `hsl(190, 8%, 15%)`, // Highlighted text
+    highlight: `hsl(190, 69%, 61%)`, // Bright accents
+    dark: `hsl(190, 57%, 53%)`, // For buttons or darker elements
+    secondaryText: `hsl(190, 8%, 65%)`, // Muted text
+    imageHighlight: `hsl(190, 69%, 61%)`, // Image accents
+    compImgHighlight: `#fff`, // Light component backgrounds
+    jacketColor: `hsl(190, 92%, 85%)`, // Subtle accents
+    headerColor: `hsl(190, 12%, 90%)`, // Header background
+    splashBg: `hsl(190, 69%, 61%)`, // Splash screen background
+  };
+
+  export const darkTheme = {
+    body: 'rgba(75, 192, 192, 0.2)', // Dark background
+    text: `hsl(190, 92%, 85%)`, // Light text for contrast
+    expTxtColor: `hsl(190, 70%, 96%)`, // Bright for emphasis
+    highlight: `hsl(190, 69%, 61%)`, // Accent color
+    dark: `hsl(190, 8%, 25%)`, // For subtle dark accents
+    secondaryText: `hsl(190, 12%, 65%)`, // Muted secondary text
+    imageHighlight: `hsl(190, 57%, 53%)`, // Accent for images
+    compImgHighlight: `hsl(190, 12%, 25%)`, // Dark component highlights
+    jacketColor: `hsl(190, 8%, 35%)`, // Darker accents
+    headerColor: `hsl(192, 28.00%, 41.40%)`, // Header background
+    splashBg: `hsl(190, 12%, 15%)`, // Splash screen background
+  };
   
+  
+  
+  
+  // Example export for integration
   export const chosenTheme = blueTheme;
   

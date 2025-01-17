@@ -38,14 +38,14 @@ function App() {
           <div ref={(el) => (sectionsRef.current["Home"] = el)} id="home">
             <Home theme={chosenTheme} />
           </div>
-          <div ref={(el) => (sectionsRef.current["EducationComponent"] = el)} id="education">
-            <EducationComponent theme={chosenTheme} />
-          </div>
           <div ref={(el) => (sectionsRef.current["Experience"] = el)} id="experience">
             <Experience theme={chosenTheme} />
           </div>
           <div ref={(el) => (sectionsRef.current["Projects"] = el)} id="projects">
             <Projects theme={chosenTheme} />
+          </div>
+          <div ref={(el) => (sectionsRef.current["EducationComponent"] = el)} id="education">
+            <EducationComponent theme={chosenTheme} />
           </div>
           <div ref={(el) => (sectionsRef.current["Contact"] = el)} id="contact">
             <Contact theme={chosenTheme} />

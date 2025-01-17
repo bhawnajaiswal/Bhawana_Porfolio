@@ -219,7 +219,7 @@ const settings = {
         subtitle: "B.Tech",
         logo_path: "JSSATE_Noida.png",  // Correct path format
         alt_name: "JSS Academy of Technical Education, Noida",
-        duration: "2021 - 2024",
+        duration: "2018 - 2022",
         descriptions: [
           "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS etc.",
           "⚡ Apart from this, I have done courses on Python and Full Stack Development.",
@@ -284,17 +284,6 @@ const settings = {
         work: true,
         experiences: [
           {
-            title: "Graduate Engineer Trainee",
-            company: "Vodafone Intelligent Solutions",
-            company_url: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
-            logo_path: "vodafone.png",
-            duration: "August 2022 - September 2023",
-            location: "Pune, India",
-            description:
-              "Supported database management by developing SQL queries for data analysis and reporting. Administered Linux servers and created automation scripts to streamline IT operations and improve efficiency.",
-            color: "#000000",
-          },
-          {
             title: "Senior Executive",
             company: "Vodafone Intelligent Solutions",
             company_url: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
@@ -303,6 +292,17 @@ const settings = {
             location: "Pune, India",
             description:
               "I developed and maintained web applications, optimized server performance, managed databases, and automated IT operations to ensure smooth and efficient system performance.",
+            color: "#000000",
+          },
+          {
+            title: "Graduate Engineer Trainee",
+            company: "Vodafone Intelligent Solutions",
+            company_url: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
+            logo_path: "vodafone.png",
+            duration: "August 2022 - September 2023",
+            location: "Pune, India",
+            description:
+              "Supported database management by developing SQL queries for data analysis and reporting. Administered Linux servers and created automation scripts to streamline IT operations and improve efficiency.",
             color: "#000000",
           },
         ],
