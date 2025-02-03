@@ -21,7 +21,7 @@ const settings = {
     subTitle:
       "An enthusiastic and results-driven professional passionate about designing and delivering end-to-end solutions that are innovative, scalable, and impactful. With a strong technical foundation and a commitment to excellence, I thrive on creating value through transformative products that solve real-world problems and drive measurable success.",
     resumeLink:
-      "https://drive.google.com/file/d/15xTNXM_RDTjUs4mStfwCWKENDasuB-Dg/view?usp=sharing",
+      "https://drive.google.com/file/d/1kme9dKgWJ8ucf66R_XxtBbLNw5seirNo/view?usp=sharing",
     portfolio_repository: "https://github.com/bhawnajaiswal/Bhawana_Porfolio",
     githubProfile: "https://github.com/bhawnajaiswal",
     linkdinLink: "https://www.linkedin.com/in/bhawana-jaiswal-4a3335197/",
